@@ -6,7 +6,7 @@ Das Board unterstützt neben den beiden Pico-Prozessoren
 
     SPI - (Touch) - Displays mit ILI9341 Treiber von 2.4 bis 3.2 Zoll (240 x 320 Pixel)
 
-und mit ST7736 Treiber 3.5 und 4 Zoll (320 x 480 Pixel)
+                         und mit ST7736 Treiber      3.5 und 4 Zoll   (320 x 480 Pixel)
 
     Dual DAC MCP48x2 (8/10/12 bit)
     bis zu vier Encoder bzw. Potis
