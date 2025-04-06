@@ -1,14 +1,18 @@
 VL53L0X 360° Radar mit RP2040 auf Experimentierboard
 
-Aufgebaut habe ich das „Radar" auf einem von mir entwickelten Experimentierboard für den RP2040 bzw. RP2350 im Format 100x 160.
+Aufgebaut habe ich das „Radar" auf einem von mir entwickelten Experimentierboard für den RP2040 bzw. RP2350 im Format 100 x 160:
 
-Das Board unterstützt neben den beiden Pico-Prozessoren
+
+
+Auf dem Board - neben dem PICO-Board - können folgende Komponeneten eingesteckt werden :
 
     SPI - (Touch) - Displays mit ILI9341 Treiber von 2.4 bis 3.2 Zoll (240 x 320 Pixel)
 
                          und mit ST7736 Treiber      3.5 und 4 Zoll   (320 x 480 Pixel)
 
-    Dual DAC MCP48x2 (8/10/12 bit)
+    Dual DAC MCP48x2 (8/10/12 bit) (SPI)
+    Quad ADC MCP3x04 (10/12 bit)   (SPI)
+    EEPROM 24LC64/256 (I2C)
     bis zu vier Encoder bzw. Potis
     vier Taster
     vier Steckplätze für LEDs
@@ -17,9 +21,13 @@ obige Komponenten sind auf Buchsen (Pinheader) steckbar.
 
 Ausserdem ist das Boardmit einem kleinen Breadboard bestückt.
 
-Die Stromversorgung erfolgt momentan über die USB-Buchse des Picos, eine zusätzliche wird auf dem Board untergebracht (umschaltbar 5V / 12V ?).
+Die Stromversorgung erfolgt momentan über die USB-Buchse des Picos,
+eine zusätzliche ist auf dem Board integrierbar (USBC) (-5V/60mA, 12V (ca 2A ).
+
+
 
 Um möglichst viele dieser Komponenten zu testen, hab ich dieses Radar auf dem Board aufgebaut.
+
 
 Es besteht aus zwei VL53L0X, die mit der Rückseite zueinander auf einem kleinen Servo (SG90?) befestigt sind.
 
